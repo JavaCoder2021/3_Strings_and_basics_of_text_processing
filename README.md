@@ -1,1 +1,1 @@
-# Module3
+Solving the task for Epam Module 3
