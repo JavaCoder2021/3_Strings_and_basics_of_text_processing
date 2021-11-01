@@ -10,8 +10,9 @@ public class Task2i {
         System.out.println(s);
         
         StringBuilder str = replaceString(s);
+        String newString = str.toString();
         
-        System.out.println("New string = " + str);
+        System.out.println("New string = " + newString);
         
     }
     
@@ -25,9 +26,9 @@ public class Task2i {
                     str.append("ab");
             else 
                 str.append(c);
-        }       
-       
-       return str;
+        }
+                          
+        return str;
        
    }
     
