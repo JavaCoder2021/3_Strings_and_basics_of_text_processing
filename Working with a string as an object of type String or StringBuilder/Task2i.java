@@ -2,31 +2,37 @@
 
 package task2i;
 
+import java.util.Scanner;
+
 public class Task2i {
 
     public static void main(String[] args) {
 
-        String s = "I have 22 bananas, 121 pencils, and 32 apples";
-        System.out.println(s);
+        //Input
+        Scanner input = new Scanner(System.in);
         
-        StringBuilder str = replaceString(s);
-        String newString = str.toString();
+        System.out.print("Line = ");
+        String str = input.nextLine(); 
         
-        System.out.println("New string = " + newString);
+        String newString = replaceString(str);
+        
+        System.out.println("New line = " + newString);
         
     }
     
-   public static StringBuilder replaceString(String s) {
+    public static String replaceString(String str) {
 
-        StringBuilder str = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         
-        for (char c: s.toCharArray()) 
+        for (char c: str.toCharArray()) 
         {
             if (c == 'a') 
-                    str.append("ab");
+                    builder.append("ab");
             else 
-                str.append(c);
+                builder.append(c);
         }
+        
+        str = builder.toString();
                           
         return str;
        
