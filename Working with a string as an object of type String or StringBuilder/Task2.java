@@ -7,7 +7,7 @@ public class Task2 {
     public static void main(String[] args) {
 
         String s = "I have 22 bananas, 121 pencils, and 32 apples";
-        System.out.println(s);
+        System.out.println("Line = " + s);
         
         String newStr = replaceString(s);
         
