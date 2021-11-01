@@ -11,7 +11,7 @@ public class Task2 {
         
         String newStr = replaceString(s);
         
-        System.out.println("New string = " + newStr);
+        System.out.println("New line = " + newStr);
         
     }
     
