@@ -33,7 +33,7 @@ public class Task5 {
         int count = 0;
         
         for (char c: str.toCharArray()) 
-            if (c == 'а' || c == 'a') //Russin and English 'a'
+            if (c == 'а' || c == 'a') //Russian and English 'a'
                 count++;
                         
         return count;
