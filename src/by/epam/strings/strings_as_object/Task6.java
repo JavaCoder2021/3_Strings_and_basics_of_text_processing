@@ -12,9 +12,9 @@ public class Task6 {
 
         String str = input();
         
-        String newString = doubledCharacters(str);
+        String newStr = doubledCharacters(str);
         
-        output(newString);
+        output(newStr);
         
     }
     
@@ -28,7 +28,7 @@ public class Task6 {
         
     }    
     
-    public static String doubledCharacters(String str) {
+    private static String doubledCharacters(String str) {
 
         StringBuilder builder = new StringBuilder();
         
