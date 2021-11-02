@@ -1,6 +1,6 @@
 /*
 10. Строка X состоит из нескольких предложений, каждое из которых кончается точкой, 
-восклицательным или вопросительным знаком. Определить количество предложений в строке X.
+восклицательным или вопросительным знаком. Определить количество предложений в строке X. 
 */
 
 package by.epam.strings.strings_as_object;
@@ -54,7 +54,7 @@ public class Task10 {
     
     private static void output(int numberSentences) {
         
-        System.out.println("Number of offers = " + numberSentences);
+        System.out.println("Number of sentences = " + numberSentences);
         
     }
     
