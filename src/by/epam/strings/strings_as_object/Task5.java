@@ -28,7 +28,7 @@ public class Task5 {
         
     }    
     
-    public static int characters(String str) {
+    private static int characters(String str) {
 
         int count = 0;
         
