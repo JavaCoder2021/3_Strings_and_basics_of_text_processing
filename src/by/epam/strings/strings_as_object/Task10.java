@@ -52,7 +52,7 @@ public class Task10 {
          
     }
     
-    private static void output (int numberSentences) {
+    private static void output(int numberSentences) {
         
         System.out.println("Number of offers = " + numberSentences);
         
