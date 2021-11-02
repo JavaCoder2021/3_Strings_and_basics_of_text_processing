@@ -12,9 +12,9 @@ public class Task2i {
 
         String str = input();
         
-        String newString = replaceString(str);
+        String newStr = replaceString(str);
         
-        output(newString);
+        output(newStr);
         
     }
     
