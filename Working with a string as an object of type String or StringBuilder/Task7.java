@@ -3,7 +3,8 @@
 
 package task7;
 
-import java.util.*;
+import java.util.Scanner;
+import java.util.LinkedHashSet;
 
 public class Task7 {
 
