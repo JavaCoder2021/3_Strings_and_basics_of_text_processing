@@ -17,8 +17,8 @@ public class Task9 {
         int lower = countLower(str);      
         int upper = countUpper(str);
                
-        output("Lower = ",lower);
-        output("Upper = ",upper);
+        output("Lower = ", lower);
+        output("Upper = ", upper);
         
     }
     
