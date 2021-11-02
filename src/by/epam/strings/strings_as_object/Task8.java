@@ -15,7 +15,7 @@ public class Task8 {
                
         String[] words = str.split(" ");
 
-        int wordNumber = getLongWord(str, words);
+        int wordNumber = getLongWord(words);
         
         output(words[wordNumber]);
         
@@ -31,7 +31,7 @@ public class Task8 {
         
     }
     
-    private static int getLongWord(String str, String[] words) {
+    private static int getLongWord(String[] words) {
         
         int max = 0;
         int count;
