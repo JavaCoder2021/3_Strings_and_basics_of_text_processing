@@ -13,14 +13,23 @@ public class Task10 {
         Scanner input = new Scanner(System.in);
         System.out.print("Line = ");
         String str = input.nextLine();
-        
-        int numberSentences = countOfSentences(str);
-        
-        System.out.println("Number of offers = " + numberSentences);
+                
+        output(countOfSentences(str));
         
     }
     
-     public static int countOfSentences(String str) {
+    public static boolean isEndOfnumberSentence(char tmp) {
+        
+        boolean isEnd = false;
+
+        if (tmp == '.' || tmp == '!' || tmp == '?') 
+            isEnd = true;
+
+        return isEnd;
+        
+    }
+    
+    public static int countOfSentences(String str) {
 
         int numberSentences = 0;
         
@@ -34,14 +43,9 @@ public class Task10 {
          
     }
     
-    public static boolean isEndOfnumberSentence(char tmp) {
+    public static void output (int numberSentences) {
         
-        boolean isEnd = false;
-
-        if (tmp == '.' || tmp == '!' || tmp == '?') 
-            isEnd = true;
-
-        return isEnd;
+        System.out.println("Number of offers = " + numberSentences);
         
     }
     
