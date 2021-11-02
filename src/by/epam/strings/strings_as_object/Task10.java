@@ -11,12 +11,19 @@ public class Task10 {
 
     public static void main(String[] args) {
 
-        //Input
+        String str = input();
+      
+        output(countOfSentences(str));
+        
+    }
+    
+    private static String input() {
+        
         Scanner input = new Scanner(System.in);
         System.out.print("Line = ");
         String str = input.nextLine();
-                
-        output(countOfSentences(str));
+        
+        return str;
         
     }
     
