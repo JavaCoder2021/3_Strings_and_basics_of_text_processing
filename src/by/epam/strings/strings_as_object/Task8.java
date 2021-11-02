@@ -12,8 +12,7 @@ public class Task8 {
     public static void main(String[] args) {
         
         String str = input();
-        
-        str = str.trim();
+               
         String[] words = str.split(" ");
 
         int wordNumber = getLongWord(str, words);
