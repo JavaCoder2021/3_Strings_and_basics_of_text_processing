@@ -34,10 +34,8 @@ public class Task6 {
         
         for (char c: str.toCharArray()) 
             builder.append(c).append(c);
-        
-        str = builder.toString();
                         
-        return str;
+        return builder.toString();
        
    }
     
