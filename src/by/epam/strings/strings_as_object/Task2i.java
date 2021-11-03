@@ -39,10 +39,8 @@ public class Task2i {
             else 
                 builder.append(c);
         }
-        
-        str = builder.toString();
                           
-        return str;
+        return builder.toString();
        
    }
     
