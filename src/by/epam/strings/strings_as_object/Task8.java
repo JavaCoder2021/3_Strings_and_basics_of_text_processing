@@ -34,22 +34,13 @@ public class Task8 {
     private static int getLongWord(String[] words) {
         
         int max = 0;
-        int count;
         int wordNumber = 0;
-        for (int i = 0; i < words.length; i++)
-        {
-            count = 0;
-            char[] tmp = words[i].toCharArray();
-            for (int a = 0; a < tmp.length; a++)
+        for (int i = 0; i < words.length; i++)   
+            if (words[i].length() > max)
             {
-                count++;
-            }         
-            if (count > max)
-            {
-                max = count;
+                max = words[i].length();
                 wordNumber = i;
             }
-        }
         
         return wordNumber;
         
