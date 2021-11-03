@@ -47,7 +47,7 @@ public class Task1 {
                 System.out.println("\n" + sortLexems(text));
                 break;  
             default:
-                System.out.println("Incorrect choose!");
+                System.out.println("\n" + "Incorrect choose!" + "\n");
                 break;         
         }
         
