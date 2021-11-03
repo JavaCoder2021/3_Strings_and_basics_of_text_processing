@@ -41,11 +41,9 @@ public class Task7 {
             if (temp.add(str.charAt(i)))
             {
                 builder.append(str.charAt(i));
-            }    
+            }
         
-        str = builder.toString();
-        
-        return str;
+        return builder.toString();
         
     }
     
