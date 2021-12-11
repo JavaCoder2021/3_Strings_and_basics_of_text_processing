@@ -1,6 +1,7 @@
 /*
-2. В строке вставить после каждого символа 'a' символ 'b'.
-*/
+ * 2. 
+ * В строке вставить после каждого символа 'a' символ 'b'. 
+ */
 
 package by.epam.strings.strings_as_object;
 
@@ -32,8 +33,7 @@ public class Task2i {
 
         StringBuilder builder = new StringBuilder();
         
-        for (char c: str.toCharArray()) 
-        {
+        for (char c: str.toCharArray()) {
             if (c == 'а' || c == 'a') //Russian and English 'a' 
                     builder.append("ab");
             else 
