@@ -1,6 +1,8 @@
 /*
-1. Дан текст (строка). Найдите наибольшее количество подряд идущих пробелов в нем.
-*/
+ * 1. 
+ * Дан текст (строка). 
+ * Найдите наибольшее количество подряд идущих пробелов в нем.
+ */
 
 package by.epam.strings.strings_as_object;
 
@@ -34,12 +36,11 @@ public class Task1 {
         int count = 0;
         int a;
         char[] str = s.toCharArray();
-        for (int i = 0; i < str.length; i++)
-        {
-            if (str[i] == ' ')
-            {
+        
+        for (int i = 0; i < str.length; i++) {
+            if (str[i] == ' ') {
                 count = 1;
-                for (a = 1; ((a + i) < str.length && (str[a + i]==' ')); a++)
+                for (a = 1; ((a + i) < str.length && (str[a + i] == ' ')); a++)
                     count++;
             }
             if (count > max) max = count;
