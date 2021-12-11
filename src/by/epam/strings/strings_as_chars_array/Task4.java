@@ -1,6 +1,7 @@
 /*
-4. В строке найти количество чисел.
-*/
+ * 4. 
+ * В строке найти количество чисел.
+ */
 
 package by.epam.strings.strings_as_chars_array;
 
@@ -21,7 +22,8 @@ public class Task4 {
         
         String[] sarr = str.split(" ");
         int count = 0;
-        for(String str1 : sarr) {
+        
+        for (String str1 : sarr) {
             try {
                 Integer.parseInt(str1);
             } 
