@@ -1,6 +1,6 @@
 /*
-2. Замените в строке все вхождения 'word' на 'letter'.
-*/
+ * 2. Замените в строке все вхождения 'word' на 'letter'.
+ */
 
 package by.epam.strings.strings_as_chars_array;
 
