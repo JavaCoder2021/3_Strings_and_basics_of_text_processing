@@ -1,7 +1,8 @@
 /*
-9. Посчитать количество строчных (маленьких) и прописных (больших) букв в введенной строке. 
-Учитывать только английские буквы. 
-*/
+ * 9. 
+ * Посчитать количество строчных (маленьких) и прописных (больших) букв в введенной строке. 
+ * Учитывать только английские буквы. 
+ */
 
 package by.epam.strings.strings_as_object;
 
@@ -49,8 +50,7 @@ public class Task9 {
         int lower = 0;
         ArrayList<Character.UnicodeBlock> english = addCharacterUnicodeBlock();
         
-        for ( char tmp: str.toCharArray() )
-        {
+        for (char tmp: str.toCharArray()) {
             Character.UnicodeBlock unicodeBlock = Character.UnicodeBlock.of(tmp);
             if (english.contains(unicodeBlock)) 
                 if (Character.isLowerCase(tmp) && Character.isLetter(tmp))
@@ -66,8 +66,7 @@ public class Task9 {
         int upper = 0;
         ArrayList<Character.UnicodeBlock> english = addCharacterUnicodeBlock();
         
-        for ( char tmp: str.toCharArray() )
-        {
+        for (char tmp: str.toCharArray()) {
             Character.UnicodeBlock unicodeBlock = Character.UnicodeBlock.of(tmp);
             if (english.contains(unicodeBlock)) 
                 if (Character.isUpperCase(tmp) && Character.isLetter(tmp))
