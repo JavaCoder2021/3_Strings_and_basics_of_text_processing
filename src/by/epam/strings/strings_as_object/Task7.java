@@ -1,7 +1,8 @@
 /*
-7. Вводится строка. Требуется удалить из нее повторяющиеся символы и все пробелы. 
-Например, если было введено "abc cde def", то должно быть выведено "abcdef".
-*/
+ * 7. 
+ * Вводится строка. Требуется удалить из нее повторяющиеся символы и все пробелы. 
+ * Например, если было введено "abc cde def", то должно быть выведено "abcdef".
+ */
 
 package by.epam.strings.strings_as_object;
 
@@ -32,14 +33,13 @@ public class Task7 {
     
     private static String removeDuplicateCharacters(String str) {
         
-        LinkedHashSet<Character> temp = new LinkedHashSet<>();
+        LinkedHashSet<Character> temp = new LinkedHashSet();
         StringBuilder builder = new StringBuilder();
  
         str = str.replace(" ", "");
  
-        for (int i = 0; i < str.length(); i++) 
-            if (temp.add(str.charAt(i)))
-            {
+        for (int i = 0; i < str.length(); i++)
+            if (temp.add(str.charAt(i))) {
                 builder.append(str.charAt(i));
             }
         
