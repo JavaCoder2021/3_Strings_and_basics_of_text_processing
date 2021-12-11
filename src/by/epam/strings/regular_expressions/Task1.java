@@ -1,11 +1,12 @@
 /*
-1.  Cоздать  приложение,  разбирающее  текст  (текст  хранится  в  строке)  и  
-позволяющее  выполнять  с  текстом  три  различных операции:  
- - отсортировать  абзацы  по  количеству  предложений;  
- - в  каждом  предложении  отсортировать  слова  по  длине; 
- - отсортировать лексемы в предложении по убыванию количества вхождений заданного символа, 
-        а в случае равенства  – по алфавиту. 
-*/
+ * 1.  
+ * Cоздать  приложение,  разбирающее  текст  (текст  хранится  в  строке)  и  
+ * позволяющее  выполнять  с  текстом  три  различных операции:  
+ *  - отсортировать  абзацы  по  количеству  предложений;  
+ *  - в  каждом  предложении  отсортировать  слова  по  длине; 
+ *  - отсортировать лексемы в предложении по убыванию количества вхождений заданного символа, 
+ *         а в случае равенства  – по алфавиту. 
+ */
 
 package by.epam.strings.regular_expressions;
 
@@ -30,10 +31,9 @@ public class Task1 {
     
     private static void ui(String text) {
      
-        int choose = input();
+        int choose = scannerInt();
 
-        switch (choose)
-        {
+        switch (choose) {
             case 1:
                 System.out.println("\n" + text);
                 break;           
@@ -55,18 +55,22 @@ public class Task1 {
         
     }
     
-    private static int input() {
+    private static int scannerInt() {
         
         Scanner input = new Scanner(System.in);
-        menuText();    
-        while (!input.hasNextInt()) 
-        {
-            input.next();
-            menuText();
-        }
-        int choose = input.nextInt();        
+        int num = -1;
         
-        return choose;
+        do {
+            menuText();
+            if (input.hasNextInt()) {
+                num = input.nextInt();
+            } 
+            else {
+                input.next();
+            }
+        } while (num <= 0);
+
+        return num;
         
     }
     
@@ -113,14 +117,11 @@ public class Task1 {
         
         paragraphs = splitParagraphs(text);
       
-        for (i = 0; i < paragraphs.length - 1; i++)
-        {
+        for (i = 0; i < paragraphs.length - 1; i++) {
             count = i;
             min = splitSentences(paragraphs[i]).length;
-            for (a = i + 1; a < paragraphs.length; a++)
-            {        
-                if (splitSentences(paragraphs[a]).length < min)
-                {
+            for (a = i + 1; a < paragraphs.length; a++) {        
+                if (splitSentences(paragraphs[a]).length < min) {
                     count = a;
                     min = splitSentences(paragraphs[a]).length;
                 }
@@ -150,20 +151,15 @@ public class Task1 {
         StringBuilder str = new StringBuilder();
         
         paragraphs = splitParagraphs(text);
-        for (i = 0; i < paragraphs.length; i++)
-        {
+        for (i = 0; i < paragraphs.length; i++) {
             sentences = splitSentences(paragraphs[i]);
-            for (a = 0; a < sentences.length; a++)
-            {
+            for (a = 0; a < sentences.length; a++) {
                 words = splitWords(sentences[a]);
-                for (q = 0; q < words.length - 1; q++)
-                {
+                for (q = 0; q < words.length - 1; q++) {
                     count = q;
                     min = words[q].length();
-                    for (z = q + 1; z < words.length; z++)
-                    {       
-                        if (words[z].length() < words[count].length())
-                        {
+                    for (z = q + 1; z < words.length; z++) {       
+                        if (words[z].length() < words[count].length()) {
                             count = z;
                             min = words[z].length();
                         }
