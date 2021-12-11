@@ -37,6 +37,7 @@ public class Task8 {
         
         int max = 0;
         int wordNumber = 0;
+        
         for (int i = 0; i < words.length; i++)   
             if (words[i].length() > max) {
                 max = words[i].length();
