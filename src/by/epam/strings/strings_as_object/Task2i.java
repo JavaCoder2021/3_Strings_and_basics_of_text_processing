@@ -35,7 +35,7 @@ public class Task2i {
         
         for (char c: str.toCharArray()) {
             if (c == 'а' || c == 'a') //Russian and English 'a' 
-                    builder.append("ab");
+                builder.append("ab");
             else 
                 builder.append(c);
         }
